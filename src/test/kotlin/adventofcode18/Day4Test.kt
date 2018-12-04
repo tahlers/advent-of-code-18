@@ -1,7 +1,6 @@
 
 package adventofcode18
 
-import io.vavr.kotlin.list
 import java.time.LocalDate
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -39,14 +38,14 @@ class Day4Test {
         [1518-11-05 00:55] wakes up
         """.trimIndent()
 
-        assertEquals(240, Day4.findGuardStrategy1(example1))
+        assertEquals(240, Day4.findGuardStrategy(example1))
     }
 
 
     @Test
     fun testRealSample(){
         val sample = this.javaClass.getResource("/day4_1_input.txt").readText(Charsets.UTF_8)
-        assertEquals(77084, Day4.findGuardStrategy1(sample))
+        assertEquals(77084, Day4.findGuardStrategy(sample))
     }
 
     @Test
@@ -71,14 +70,14 @@ class Day4Test {
         [1518-11-05 00:55] wakes up
         """.trimIndent()
 
-        assertEquals(4455, Day4.findGuardStrategy2(example1))
+        assertEquals(4455, Day4.findGuardStrategy(example1, true))
     }
 
 
     @Test
     fun testRealSample2(){
         val sample = this.javaClass.getResource("/day4_1_input.txt").readText(Charsets.UTF_8)
-        assertEquals(23047, Day4.findGuardStrategy2(sample))
+        assertEquals(23047, Day4.findGuardStrategy(sample, true))
     }
 
 
