@@ -1,6 +1,7 @@
 
 package adventofcode18
 
+import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -111,10 +112,17 @@ class Day1Test {
     }
 
     @Test
+    @Ignore
     fun repeatReal(){
         val sample = this.javaClass.getResource("/day1_1_input.txt").readText(Charsets.UTF_8)
 
         assertEquals(56360, freqFirstRepeat(sample))
     }
 
+    @Test
+    fun repeatRealVavr(){
+        val sample = this.javaClass.getResource("/day1_1_input.txt").readText(Charsets.UTF_8)
+
+        assertEquals(56360, freqFirstRepeatVavr(sample))
+    }
 }
