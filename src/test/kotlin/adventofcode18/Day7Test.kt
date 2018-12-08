@@ -54,5 +54,4 @@ class Day7Test {
         assertEquals(980, Day7.secondsSpend(sample, 5, 60))
     }
 
-//980
 }
