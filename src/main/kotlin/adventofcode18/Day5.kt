@@ -6,7 +6,6 @@ object Day5 {
         return reduce(input).length
     }
 
-
     private fun canReact(char1: Char, char2: Char): Boolean =
             char1.toLowerCase() == char2.toLowerCase() && (char1.isUpperCase() != char2.isUpperCase())
 
@@ -22,6 +21,5 @@ object Day5 {
                 .map { p -> reduceSize(input.filter { it.toLowerCase() != p }) }
                 .min()
     }
-
 
 }

@@ -112,7 +112,7 @@ class Day1Test {
     }
 
     @Test
-    @Ignore
+    //@Ignore
     fun repeatReal(){
         val sample = this.javaClass.getResource("/day1_1_input.txt").readText(Charsets.UTF_8)
 

@@ -41,16 +41,6 @@ object Day3 {
                 .groupingBy { it.first }
                 .fold(emptySet()) { acc, elem -> acc.plus(elem.second)}
 
-//         val claimCountMap: Map<Claim, Int> = pToClaim
-//                 .values
-//                 .groupingBy { it }
-//                 .
-//
-//
-              //  .fold(setOf()) { acc, elem -> acc.plus(elem)}
-
-        //return setOf(0)
-
         val claimCountMap: Map<Claim, Int> = pToClaim
                 .values
                 .fold(mapOf()) { acc, claims ->

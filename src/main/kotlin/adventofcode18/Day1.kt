@@ -7,13 +7,13 @@ import io.vavr.collection.List as VList
 import io.vavr.collection.Set as VSet
 
 fun freqencyAdjust(input: String): Int  {
-    val lines = input.split("\n")
+    val lines = input.lines()
     return lines.map{it.toInt() }.sum()
 
 }
 
 fun freqFirstRepeat(input: String): Int {
-    val lines = input.split("\n")
+    val lines = input.lines()
     val intInput = lines.map{it.toInt() }
 
     return firstRepeat(0, hashSetOf(), intInput, intInput)
@@ -31,7 +31,7 @@ tailrec fun firstRepeat(currentFreq: Int, seen: Set<Int>, input: List<Int>, comp
     return if (currentFreq in seen) {
         currentFreq
     } else {
-        //println("size: ${seen.size}")
+        println("size: ${seen.size}")
         val newInput = if (input.isEmpty()) complete else input
         val newFreq = currentFreq + newInput.first()
         firstRepeat(newFreq, seen.plus(currentFreq), newInput.drop(1), complete  )
