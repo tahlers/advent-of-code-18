@@ -32,7 +32,7 @@ class Day8Test {
     @Test
     fun testValueReal(){
         val sample = this.javaClass.getResource("/day8_1_input.txt").readText(Charsets.UTF_8)
-        assertEquals(66, Day8.value(sample))
+        assertEquals(20849, Day8.value(sample))
     }
 
 }

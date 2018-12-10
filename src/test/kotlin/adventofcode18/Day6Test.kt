@@ -43,7 +43,7 @@ class Day6Test {
     @Test
     fun testallCoordFieldReal(){
         val sample = this.javaClass.getResource("/day6_1_input.txt").readText(Charsets.UTF_8)
-        assertEquals(4143, Day6.allCoordField(sample, 10000))
+        assertEquals(35039, Day6.allCoordField(sample, 10000))
     }
 
 }
