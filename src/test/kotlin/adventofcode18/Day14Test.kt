@@ -15,9 +15,9 @@ class Day14Test {
         assertEquals("5941429882", Day14.recipesAfter(2018))
     }
 
-    @Test //209231
+    @Test
     fun testRecipesAfterReal(){
-        assertEquals("5158916779", Day14.recipesAfter(209231))
+        assertEquals("6126491027", Day14.recipesAfter(209231))
     }
 
     @Test
